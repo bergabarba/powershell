@@ -4,7 +4,7 @@
 .DESCRICAO
     Versao com captura de erro para diagnosticar falhas na sessao elevada.
     AVISO: Armazenar senhas em texto claro e um risco de seguranca.
-    Script desenvolvido para para cpjbauru.local 
+    Script desenvolvido para para um Dominio 
 .OBSERVACAO IMPORTANTE
     Na linha 23 antes de distribuir o script nas pastas dos usuarios modifique o valor da varivel $Password com o valor correspondente ao usuario.
     Na Linha 67 do script existe um parametro --PrefixLength 24. este valor e o CIDR (prefixo) da mascara de sub-rede. ex: mascara 255.255.255.0
@@ -19,7 +19,7 @@ param(
 )
 
 # --- INICIO DA AREA DE CONFIGURACAO DE CREDENCIAIS (NAO SEGURO) ---
-$Username = "CPJBAURU\administrador"
+$Username = "DOMINIO\administrador"
 $Password = "senha-super-forte-kkkk"
 # --- FIM DA AREA DE CONFIGURACAO DE CREDENCIAIS ---
 
